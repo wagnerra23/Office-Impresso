@@ -1,0 +1,824 @@
+﻿Office Comercial / Impresso 2022
+
+Versão 2022.2.1.87;
+
+- informar aqui o change Log
+*Módulo Produto
+ [Melhoria] - Duplicação de produto por classificação e tipo.
+*Módulo Caixa
+ [Correção] - Transferência automática ao fechar caixa não estava funcionando.  
+Composição 
+Anexos
+
+Variação
+produto dividido
+Anexo 
+Composição
+
+
+Versão 2022.2.1.84;
+*Módulo Unidade
+ [Melhoria] - Contrução de Unidades de Rendimento para conversão de Unidades de Medida.
+ [Melhoria] - Tela de Rendimento agora mostra todas as Unidades de Rendimento disponíveis para a combinação das Unidades de Compra e Cadastro.
+*Módulo Venda
+ [Corrigido] - Bug que não permitia imprimir caso vc nunca tivesse imprimido
+*Módulo Boleto
+ [Corrigido] - Adicionado layout e versão do arquivo, para impressão do PDF 
+ [Corrigido] - A Tag $Endereco$ agora pega o endereço pela empresa dona da conta por padrão.
+ [Adicionado] - Foi inserida a informação 'Endereço do Beneficiário:' na tag $Endereco$
+*Módulo Nota Fiscal
+ [Corrigido] - Botão Visualizar NFe gerava número de nota na venda, fazendo contabilizar no contador de notas.
+                        -> Agora não gera mais, pega o próximo número, só pega número específico se estiver na venda.
+*Módulo PDV
+ [Corrigido] - O botão Administração dava um erro ao cancelar cupom, que foi corrigido.
+ [Melhoria] - Ao cancelar o cupom, fala quem fez e por onde foi.
+
+Versão 2022.2.1.83;
+*Módulo Boletos
+ [Corrigido] - Agora é possivel ver a mensagem de erro do que esta faltando para emitir o boleto
+*Módulo Venda
+ [Melhoria] - Se o Telefone(FONE1) estiver vazio, o sistema ira colocar o CELULAR(FONE2) no campo TELEFONE
+*Módulo NFSE
+ [Melhoria] - Agora o Calculo do ISS é feito na hora de apertar para emitir a nota, antes só era feito no Carregar Padrão;
+ [Corrigido] - A impressão da nota direto apos a emissão, não estava funcionando com a nova opção de substituir os dados da empresa  
+ [Corrigido] - Foi removido uma mensagem(ShowMessage) que aparecia sempre antes de assinar o XML, para debug; 
+
+
+Versão 2022.2.1.82;
+*Módulo Cadastro Venda
+ [Corrigido] - Bug ao duplicar venda ao verificar se a mesma tem TEF
+*Módulo Consulta de Vendas
+ [Melhoria] - Rotinas de Cancelar Fatura, Fatura, e Desagrupar foram ajustadas
+ [Melhoria] - Ajustes nas permissões de Faturar e Cancelar Fatura para receber a regra da venda
+*Módulo Consulta de Pedidos 
+ [Melhoria] - Botões sem codigo que estavam na tela de pedidos foram deixados como invisivel 
+ [Corrigido] - Bug no botão enviar para venda
+*Módulo MigraVenda 
+ [Melhoria] - Ajuste para não passar com data zero a data de competencia ao migrar a venda;
+*Módulo Compras
+ [Melhorado] - Agora é possível realizar o rateio de uma CTe para várias notas alimentando um campo % Rateio.
+ [Melhorado] - Ao importar uma nota, carrega automaticamente a tabela de preço e recalcula automaticamente de acordo com o valor de venda inserido.
+*Módulo PDV
+ [Adicionado] - Nova tela de PDV com regras para TEF.
+*Módulo NFSe
+ [Adicionado] - Regras de tributação para o provedor SigIss, prefeitura de Marília. 
+
+Versão 2022.2.1.81
+
+
+Versão 2022.2.1.80
+*Módulo Anexos
+ [Melhorado] - Acesso ao arquivo guardado no banco de dados
+*Módulo Associação
+ [Adicionado] - Equipamento: Gerar boleto eventual através do cadastro de equipamento.
+ 
+*Modulo DashBoard
+ [Melhorado] A posição de abertura do botão iniciar
+ 
+Versão 2022.2.1.79
+*Modulo DashBoard
+  [Melhoria] - Realizado ajustes no layout 
+  [Adicionado] - versão 0.0.0.4 do relatório da tela
+*Modulo Venda
+  [Corrigido] - Resolvido situação onde não gravava o codigo da empresa corretamente
+*Modulo NFSe
+  [Adicionado] - Configuração(Cadastro de Empresa) para corrigir o endereço do prestador com base no cadastrado no sistema;
+  
+Versão 2022.2.1.78 (?)
+*Módulo Anexos
+ [Melhorado] - ASSOCIAÇÃO: Rateio boleto médio, Valores padrões da tela para facilitar o cadastramento.
+
+Versão 2022.2.1.77 (?)
+*Módulo Anexos
+ [Melhorado] - ASSOCIAÇÃO: Realizada migração do módulo de anexos para o novo componente. [Equipamentos, Ocorrências, Rateio e Envio de e-mails em massa]
+ [Melhorado] - AGENDA: Feita a migração dos anexos.
+
+*Módulo Atualização
+ [Melhorado] - Melhorias na atualização. Agora o sistema avisa e dá a opção de o usuário garantir que não existe mais ninguém conectado no banco de dados.
+ [Melhorado] - Ao atualizar, o sistema avisa quando é hora de fazer o Backup/Restore do banco de dados.
+
+*Modulo DashBoard
+  [Melhoria] - Realizado ajustes no layout
+  [Adicionado] - versão 0.0.0.1 do relatório da tela
+  [Adicionado] - Funções aos tiles superiores para entrar ou consultar telas especificas
+  [Adicionado] - Adicionado DashBoards para Funcionario e Tipo de Produto
+  [Adicionado] - Menu lateral com opções da tela
+  [Adicionado] - botão vermelho grande para iniciar a tela
+  [Melhoria] - Novo Layout
+*Modulo Meta
+  [Adicionado] - Adicionar Funcionario
+  [Adicionado] - Adicionar Tipo de Produto
+  [Adicionado] - Adicionar Categoria
+  [Adicionado] - Adicionar Marca
+  [Adicionado] - Botão de seleção Mes e ano
+  [Melhoria] - ajustes de posição, layout e nomes 
+  [Melhoria] - Adicionado rotinas de segurança para manter uma meta por mês, e não pode baixar o valor da meta, caso as submetas estejam ativadas
+*Modulo Produção
+  [Melhoria] - Adicionado Data de Emissão e Codigo Funcionario ao baixar estoque durante a produção  
+
+*Módulo NFe
+  [Corrigido] - Feita correção em bug de IPI na nota de devolução
+
+Versão 2022.2.1.76 Lançada(03 de agosto de 2022)
+*Modulo NFe
+ [Melhorado] - Realizados alguns novos tratamentos de retorno da Nota Fiscal Eletrônica mod 55.
+
+*Modulo Financeiro
+ [Melhorado] - Melhorada a aparência dos botões de Escolha do Caixa.
+*Modulo Consulta Venda
+ [Corrigido] Permissões de usuário não estavam sendo aplicadas nas consultas derivadas de Consulta de Venda
+
+*Modulo Relatorio
+ [Melhoria] - Foram feitas varias melhorias no desempenho da tela 
+ [Adicionado] - Compatibilidade com as novas telas de DashBoard 
+*Modulo DashBoard
+ [Adicionado] - Tela de Dashboard para vendas filtrando por categorias
+
+*Modulo NFSe
+ [Adicionado] - Novos ajustes para realizar impressão mesmo faltando alguns dados no XML
+ [Adicionado] - Homologação com o provedor ActCon - Santana do Paraíso
+
+*Modulo Anexos
+ [Adicionado] - Feita a tela de configuração para Anexos.
+ [Adicionado] - Demonstração de integração com o Dropbox
+ [Adicionado] - Ajustes para funcionar em todos os módulos disponíveis:
+	(Produção, Venda, VendaProduto, Pessoas, Produto)
+
+*Modulo Manifestação Destinatário
+ [Adicionado] - Agora é possível arquivar várias notas ao mesmo tempo com o mesmo motivo.
+ [Corrigido] - Cliente não estava conseguindo selecionar empresa e estava mostrando o contador de notas errado.
+
+Versão 2022.2.1.75 Lançada (21 de julho de 2022)
+*Modulo Configuração
+ [Adicionado] - Regra que solicita permissão para o usuario de caixa quando tenta remover algum produto
+ [Adicionado] - Regra que solicita permissão para o usuario de caixa quando tenta cancelar uma venda
+ [Adicionado] - Regra que não permite o usuario de caixa imprimir qualquer documento antes de faturar uma venda
+*Modulo COnfiguração TEF
+ [Melhoria] -  novo layout as configurações e removido condigos que não seram mais utilizados
+ [Melhoria] -  Ajustado opções para gravar dados do TEF com o nome do caixa individual
+*Modilo Venda Financeiro TEF
+ [Melhoria] - Feitos ajustes no layout da tela
+ [Melhoria] - Ajustado Rotina de ler as configurações do TEF pelo caixa selecionado
+ [Adicionado] - Informações na tela que mostra os valores das operações
+ [Adicionado] - Grid que mostra tipos de pagamentos de acordo com a opção de pagamento selecionada
+ [Adicionado] - Inserir pagamento feito no tef para o sistema;
+
+*Módulo Nota Fiscal Manifesto
+ [Adicionado] - Ao arquivar o manifesto, agora pede o motivo para realizar o arquivamento.
+ [Adicionado] - Ao importar para Compra ou arquivar o manifesto, coloca o manifesto como finalizado.
+ [Adicionado] - O sistema realizará automaticamente a consulta para todas as empresas com certificado ativo.
+*Módulo Venda  
+ [Adicionado] - NFSe - No faturamento marcar como Padrão da NFSe com "S" (Duplicar) Para que gere novamente a descrição
+ 
+*Módulo Pessoa  
+ [Melhoria] - Atualizado modo de anexo
+ [Adicionado] - Adicionado pasta para padrão de arquivos acessivel a todas as vendas do cliente
+ 
+*Módulo Produto  
+ [Adicionado] - Adcicionado nova tela anexo
+ [Adicionado] - Adicionado pasta para padrão de arquivos acessivel a todas as produções do cliente(Manuais e fotos modelos do produto)
+ 
+*Módulo Venda  
+ [Melhoria] - Atualizado modo de anexo
+ [Adicionado] - Adicionado pasta para envio de arquivos para produção
+ [Adicionado] - Adicionado pasta para arquivos padrões do cliente
+ *Modulo Relatório
+ [Adicionado] - Adicionado botão para Relatórios individuais por nome
+
+Versão 2022.2.1.74
+*Módulo Nota Fiscal Manifesto
+ [Adicionado] - Novos botões e novo design de tela;
+ [Adicionado] - Ao arquivar o manifesto, agora pede o motivo para realizar o arquivamento.
+ [Adicionado] - Ao importar para Compra ou arquivar o manifesto, coloca o manifesto como finalizado.
+ [Adicionado] - O sistema realizará automaticamente a consulta para todas as empresas com certificado ativo.
+*Módulo Venda Produto
+ [Corrigido] - Ajustado alguns bugs de tela;
+*Módulo Boleto
+ [Adicionado] - Ajuste para o Boleto Cresol;
+
+Versão 2022.2.1.73
+*Módulo Financeiro
+ [Adicionado] - Boleto - Adicionado botão remover boleto. Apaga onúmero e Gera novamente o Corpo do Boleto.
+
+Versão 2022.2.1.73
+*Módulo Nota Fiscal
+ [Corrigido] Erro ao gerar histórico caso uma nota fiscal fosse deletada pela venda.
+*Módulo Venda
+ [Adicionado] - Se não tiver condição de pagamento padrão será colocado o número '1';
+ [Adicionado] - Adicionado venda com TEF dedicado
+ [Corrigido] - Mantém a Observação da Venda ao Duplicar a Venda.
+*Módulo Financeiro
+ [Adicionado] - Condição de pagamento - Adicionado compo para chamar TEF dedicado
+ [Adicionado] - Adcionado Boleto do Banco Inter, com integração com WebService
+ [Melhoria]   - Velocidade de reenviar o Boleto por email, ou gerar o Boleto. 
+*Módulo Empresa
+ [Adicionado] - Adicionado campo para CodigoLoja para TEF dedicado, ClisiTef
+*Módulo Compra
+ [Adicionado] - Importação XML - Fundo de combate a Pobresa FCPST, soma junto com FCP
+
+Versão 2022.2.1.72
+ *Módulo Compra
+ [Corrigido] Frete da CTe calculado estava zerando ao vincular produto na compra.
+ [Corrigido] Origem do material não estava importando corretamente.
+ [Corrigido] Erro do campo de ISS Retido na compra ao vincular uma CTe na compra.
+ [Corrigido] Produto comprado não mantinha o valor de venda quando marcava para Manter Margem.
+
+Versão 2022.2.1.71
+ *Módulo NFe
+ [Corrigido] Realizados ajustes na parte de tributação padrão para natureza de operação.
+ *Módulo Venda
+ [Corrigido] A opção Nota Padrão no frame NFSe não estava ficando marcada.
+
+Versão 2022.2.1.70
+ *Módulo Venda
+ [Adicionado] - TEF Cartão de crédito integrado com operadora SiTef
+ * Módulo Financeiro 
+ [Adicionado] - Adicionado Boleto do Banco Inter - Tratamento de arquivo retorno(obs: o Documento pode ter 10 caracter apenas)e o documento só pode ser impresso após o banco receber a remessa
+ [Corrigido] - Tratamento de arquivo de retorno do boleto, tratando vários ocorrencias do boleto no mesmo arquivo de retorno
+ * Módulo Principal
+ [Adicionado] mais icones nos botões do novo menu e corrigido algumas entradas de tela;
+ * Módulo TEF
+ [Adicionado] Realizados ajustes para utilização do SITEF.
+ * Módulo Manifestação do Destinatário
+ [Adicionado] Adicionadas cores no sistema para conseguir identificar melhor cada registro.
+
+Versão 2022.0.1.69
+*Módulo Principal
+-Adicionado 90% dos botões do sistema no novo menu, com algums icones;
+
+Versão 2022.0.1.68
+*Módulo Compra
+ - Colocado o número da nota do XML na compra, que foi importada (CHAVE do XML)
+ - Permitido escolher o código do produto novo na compra.
+ [Corrigido] Tela de aguarde ao enviar manifestação não estava fechando, e ficava na frente da mensagem de sucesso.
+ [Adicionado] Nova opção de consulta pela chave NFe, disponível no botão direito na tela de Manifestação.
+ *Módulo Venda
+ [Corrigido] Venda com COO de CUPOM Fiscal vinculado na Nota fiscal.
+ [Adicionado] O ISS Retido agora rateia no Total Relatório dos produtos.
+ [Adicionado] Pela consulta de venda é possível encaminhar uma venda para Pedido.
+*Módulo Nota Fiscal
+ [Modificado] Os impostos do sistema agora são gerenciados pela Natureza de Operação.
+*Histórico
+ [Adicionado] Feitos alguns tratamentos de mensagens no histórico da venda, agora é possível ler algumas situações específicas de maneira mais simples.
+[Corrigido] Bug quando reenviava pela 3º vez o produto pela produção
+*Módulo NFSe
+[Novo] Adicionado configuração para o provedor SilTecnologia para cidade de Itapevi(necessario: ACBrNFSeXServicos.ini);
+*Módulo Consulta de Venda
+[Corrigido] Posição da descrição Total Selecionado não estava no local correto;
+*Módulo Principal
+[Corrigido] Novo Menu estilo windows 10
+ 
+Versão 2022.0.1.67 Lançada (24 de junho de 2022)
+[Corrigido] Corrigido foco no botão novo quando a venda abre.
+
+Versão 2022.0.1.66 Lançada (23 de junho de 2022)
+*Módulo Venda - NFSe
+[Corrigido] Corrigido o cálculo do ISS Retido para quando a pessoa clicar mais de uma vez no Carregar Padrões e Calcular Impostos.
+[Corrigido] Abertura do cadastro de Equipamentos, retirado a referencia da venda DT_Abertura
+
+Versão 2022.0.1.65 Lançada (22 de junho de 2022)
+*Modulo Financeiro1
+[Corrigido] Atualização para previsão para Previsto
+*Modulo Vendas
+[Adicionado] Tabela de preço na venda, Se a tabela de preço do cliente for vazio ele não pede mais para mudar
+
+Versão 2022.0.1.64 Lançada (21 de junho de 2022)
+*Modulo Nota Fiscal
+[Corrigido] Nota Fiscal - NFSe Geração do número do Siat. Belem/PA
+[Corrigido] Nota Fiscal - NFSe Tratamento do Telefone acima de 10 dígitos
+
+Versão 2022.0.1.63 Lançada (17 de junho de 2022)
+*Modulo Nota Fiscal
+[Corrigido] Nota Fiscal casas decimais, configurada pelo mascaram de Quantidade ou Financeira da sistema.
+*Modulo Financeiro1
+[Adicionado] Integração com Boletos de cobrança banco inter.
+
+Versão 2022.0.1.62 Lançada (14 de junho de 2022)
+*Modulo Nota Fiscal
+[Corrigido] Nota Fiscal com Cupom Referenciado no tipo de venda Cupom
+
+Versão 2022.0.1.61 Lançada (13 de junho de 2022)
+*Modulo Vendas
+[Adicionado] Dashboards informativos de Vendas
+*Modulo Faturamento
+[Adicionado] Desenvolvido processo de Faturamento com pedidos e notas agrupadas
+[Adicionado] Dashboards de Receita com e sem ISS Retido e inconsistências de faturamento
+[Corrigido] Realizada configuração no somatório do ISS, que agora subtrai no total da venda
+[Adicionado] Consulta de Vendas agora traz o faturamento total com e sem ISS.
+*Módulo Novas Fiscais
+[Adicionado] Dashboards de NFe e NFSe
+[Corrigido] Solucionado problema que estava dando inconsistência no RPS gerado automaticamente pelo sistema
+*Módulo Compras
+[Corrigido] Ajustado layout do NF_Entrada_Produto para ficar mais intuitivo para o usuário
+[Adicionado] Adicionada coluna contendo a Origem da Mercadoria do Produto
+
+
+Versão 2022.0.1.60 Lançada (07 de junho de 2022)
+*Modulo Financeiro1
+[Corrigido] Financeiro1 Wizard na formação de preço na Venda
+*Modulo Associação
+[Adicionado] Data de participação dos rateios de Início e Fim
+*Modulo de Compras
+[Adicionado] Importação de CTe pela manifestação do destinatário
+[Adicionado] Vinculo e Rateio do custo de CTe pela compra
+[Adicionado] Novo campo que permite que o usuário lance o custo do DIFAL nos produtos pela compra
+
+Versão 2022.0.1.59 Lançada (06 de junho de 2022)
+*Modulo Venda
+[Corrigido] Ajustado para aparecer na observação as vendas que foram agrupadas ao Faturar;
+[Corrigido] Ajustado para que quando duplicar a venda aparecer na observação de qual foi duplicada;
+[Corrigido] Wizard na formação de preço na Venda 
+*Modulo Financeiro1 
+[Corrigido] Caixa - Somar o valor no caixa quando a tela abre
+
+Versão 2022.0.1.49 Lançada (28 de abril de 2022)
+[Corrigido] Bug que impedia o desbloqueio de regras quando estava em algum frame;
+[Corrigido] Bug que o tipo de venda sumia apos adicionar o segundo item na venda;
+
+Versão 2022.0.1.48 Lançada (27 de abril de 2022)
+*Modulo NFSe
+[Corrigido] Ajustado para receber normalmente o numero da nota quando quem define é a propria prefeitura
+
+Versão 2022.0.1.47 Lançada (26 de abril de 2022)
+*Modulo Tipo de Pagamento
+[Corrigido] Foi ajustado para que possa ser selecionado o tipo de pagamento de acordo com a nova regra NF;
+*Modulo NFSe
+[Corrigido] Ajustado para ter um numero unico de RPS 
+[Corrigido] Ajustado bug de deadlock ao emitir uma NFSe
+[Corrigido] Ajustado bug que em alguns casos de nota desconhecida, aparecia como confirmada
+[Corrigido] Corrigido bug de Showmessage aparecer mesmo quando não tinha nenhuma mensagem;
+[Corrigido] Corrigido bug da nota imprimir 2 vezes apos a emissão com sucesso da mesma;
+[Corrigido] Ajustado bug que não aparecia as notas agrupadas nas observações;
+[Corrigido] Ao Carregar Padrão sendo uma nota agrupada, ele tras corretamente a observação da venda que contem as notas agrupadas;
+
+Versão 2022.0.1.46 Lançada (26 de abril de 2022)
+*Módulo Venda
+[Novo] Adicionado configuração para não permitir que o nome da parcela seja diferente do nome da venda.
+[Novo] Adicionado botão ao lado do gerar parcela para excluir as parcelas 
+*Modulo Cidades
+[Corrigido] Foi corrigido um bug que não permitia escolher o provedor do ISS no cadastro de cidade
+*Modulo Empresa
+[Novo] Adicionado TEM_TEF no cadastro de empresa, para auxiliar na configuração na venda
+
+Versão 2022.0.1.45 Lançada (26 de abril de 2022)
+
+*Módulo Venda
+[Novo] Adicionado botão F6 para gerar parcela e emitir NFCE rapido
+[Corrigido] Salvar tipo de venda padrão.
+*Módulo Caixa
+[Novo] Foi adicionado um botão que mostra o histórico de modificações de caixa.
+[Corrigido] Bug de data de aberturado caixa quando deixar o mesmo com a tela aberta;
+[Corrigido] Foi ajustado o botão alterar valor inicial do caixa para ser gerenciado apenas pelo sistema de controle de usuario(User Control);
+[Corrigido] Foi Ajustado um bug que ocorria quando alguem tentava mudar a data de abertura de um caixa antigo, e ele apenas deixava apos a data do caixa mais recente
+*Módulo NFSe
+[Corrigido] Foi Ajustado o carregar padrão para CNAE e Insertivador Cultural;
+[Corrigido] Foi Ajustado o calculo do ISS de acordo com o cadastro do cliente;
+[Corrigido] Foi Ajustado um bug que não aparecia a nota cancelada, quando era feita a consulta;
+*Módulo Compra
+[Corrigido] Bug no cadastro do fornecedor ao Importar XML.
+
+Versão 2022.0.1.44 Lançada (06 de abril de 2022)
+
+*Módulo Venda
+[Corrigido] Gerar código em sequência na venda, sem pular números;
+[Corrigido] Bug ao gerar o crédito quando não tinha numero de parcelas;
+[Corrigido] Bug no botão para puxar dados do cliente novamente;
+*Módulo NFSe
+[Corrigido] Bug que acontecia ao gerar NFSe para o estado do RIO DE JANEIRO 
+*Módulo Produto
+[Novo] adicionando menu item para gerar um excel de dados para lojaintegrada.com.br
+
+
+Versão 2022.0.1.43 Lançada (01 de abril de 2022)
+*Módulo NFSe
+[Corrigido] Ajustado a consulta por RPS;
+[Corrigido] Ajustado a consulta por LOTE;  
+[Corrigido] Ajustado um bug que não conectava a venda ao provedor correto, impedindo a consulta;
+[Corrigido] Foi aplicado algumas mensagens para explicar melhor para o usuario, quando a consulta não traz o resultado esperado
+[Novo] Ajustado nota para MetropolisWeb
+[Novo] Ajustado nota para prefeitura de Lajeado 
+
+*Módulo Venda
+[Corrigido] Ajustado um bug que não carregava os grids salvos
+[Corrigido] Ajustado o salvamento de Tipo de Venda Padrão, agora é independente por Venda, Pedido e Orçamento
+
+*Módulo Produto
+[Corrigido] Alteração de código do produto estava dando erro nas validações.
+
+Versão 2022.0.1.42 Lançada (23 de março de 2022)
+
+*Módulo Geral Mestre
+[Correção] Filtro de data agora consulta por período e foi adicionado o botão para pesquisar.
+*Módulo Venda
+[Correção] Produto inativo sem filtro não aparece mais na consulta de produtos na tela de adicionar venda.
+*Módulo Produção
+[Melhoria] Colocado filtro para Equipamento 
+*Módulo Fiscal
+[Novo] Casas decimais no valor do produto
+
+Versão 2022.0.1.41 Lançada (23 de março de 2022)
+[Correção] Agora o layout salvo em perfil está carregando igualmente para todas as abas.
+[Novo] Adicionado botão de importação via XML para Produtos e Financeiro1;
+[Novo] Adicionado Frete por conta na tela de cadastro de pessoas em dados adicionais;
+[Melhoria] Foi reativado o botão de ponto eletronico virtual na tela principal do sistema;
+[Melhoria] Foi reativado o sistema de credito nas telas de VENDA; 
+[Corrigido] Ajustado um bug do evento que traz os dados do cliente; 
+[Corrigido] Ajustado um bug no estoque que acontecia quando tentava finalizar varias OS de uma só vez
+*Módulo Venda
+[Correção] Corrigido o Drag and Drop dos produtos na venda pois estava dando muitos erros.
+
+Versão 2022.0.1.40 Lançada (17 de março de 2022)
+*Módulo Produção -> Equipe
+[Correção] Funcionário por equipe
+
+*Módulo Balanco
+[Novo] Função que gera o balanço de uma data antiga;
+
+Versão 2022.0.1.39 Lançada (16 de março de 2022)
+*Módulo Produção -> Projeto
+[Melhoria] Ocultar a Barra de status do cadastro.
+
+*Modulo Produto
+[Melhoria] Registro de movimentação de Balanço aparecem em negrito na aba de movimentação;
+
+*Modulo Sintegra
+[Melhoria] Adicionado registro 61 no Sintegra, onde se realiza a declaração das Notas Fiscais de Consumidor;
+
+Versão 2022.0.1.38 Lançada (09 de março de 2022)
+
+*Módulo Produção
+[Melhoria] Produção agora trabalha por funcionários ao invés de usuários.
+[Melhoria] O estilo da linha para a situação de produção agora é selecionada pelo cadastro ao invés de ser predefinido.
+[Melhoria] Desabilitado ComboBox de usuário na tela de encaminhar e habilitado o de Funcionário.
+[Melhoria] Quando alguém muda de a OS de situação, a OS é roubada para o usuário que mexeu.
+
+*Módulo Financeiro1
+[Correção] Mensalidade - Formatção do Campo Valor, Total e Desconto/Acréscimo
+[Melhoria] Mensalidade - Gravar o Grid com as menssalidades para melhor visualização.
+
+*Módulo Pessoa
+[Melhoria] Consulta - Colocado o Campo Bloaqueado do crediário para saber de forma fácil para qual cliente não pode vender.
+[Melhoria] Adicionado o campo PODE_PRODUÇÃO na aba Funcionário -> Produção para que seja pré-definido quem irá ou não participar do módulo de produção.
+
+*Módulo Produção -> Equipes
+[Melhoria] Ao adicionar um funcionário para a equipe, ele obriga que seja marcado o campo PODE_PRODUÇÃO no cadastro de pessoas para prosseguir com a adição. Ao clicar no botão para baixo, aparece uma mensagem perguntando se quer ou não adicionar, se clicar sim ele faz o procedimento automaticamente, se clicar em não, aborta a operação.
+[Correção] Ajuste na chamada das novas Classfunction para evitar erro de nil; 
+[Melhoria] Melhorado a adição de serviços adicionais as produções;
+
+
+Versão 2022.0.1.37 Lançada (08 de março de 2022)
+*Módulo Venda
+[Correção] Reativada as Permissãoes da Venda. Bloquear alterar o valor de venda do produto.
+
+*Módulo Produção
+[Correção] Abritela sem o erro do código de Centro trabalho.
+[Melhoria] Foi ajustado algumas funções da produção, para agilizar e evitar erros na hora de iniciar, pausar e finalizar
+
+*Módulo Geral Mestre
+[Novo] Adicionado Tela que avisa o Usuario se algum item está em edição durante uma ação de Drag and Drop nas telas de consulta
+
+
+Versão 2022.0.1.36 Lançada (07 de março de 2022)
+
+*Lista de Atendimento
+[Melhoria] Adicionada tela de Lista de Atendimento com layout padronizado conforme produção.
+
+*Relatórios Financeiro1
+[Correção] Realizado ajustes nos nomes dos relatórios para baixar corretamente.
+[Correção] O sistema antes preenchia a variável realizando a verificação pelo ID do relatório. Esta verificação foi alterada para verificação por Nome do relatório para manter o mesmo padrão.
+
+*Financeiro1
+[Melhoria] Atualizado relatório Financeiro1 contábil para um modelo mais bonito e agora não é necessário o ID do relatório para imprimir. Antes dava BUG se não tinha o ID FR0036.
+[Melhoria] Conciliação bancária, Integração com banco através do arquivo OFX.
+
+*Notas Fiscais
+[Melhoria] A NFC-e não depende mais da NF-e estar instalada para ser configurada e funcionar. Todas as dependências da NFC-e são instaladas independentes da NF-e.
+[Correção] A aba de Nota Fiscal de Serviço agora some se a empresa não emitir NFS-e.
+[Novo] Adicionado Tela de eventos para NFSe onde fica guardado todos os registros de envio e de retorno.
+[Melhoria] Foram adicionados botões na tela de NFSe para visualizar os arquivos de envio e de retorno, assim como acessar a tela de eventos e visualizar a impressão.
+[Melhoria] Foram adicionados cores ao Grid na NFSe para melhor identificação da situação da nota.
+
+*Modulo Geral Mestre
+[Correção] Corrigida funcionalidade de roubar a venda de outra pessoa, que antes estava dando deadlock ao realizar alteração, inserção ou deleção de qualquer produto.
+[Melhoria] Inserida a funcionalidade no botão de Imprimir que verifica se a venda foi alterada em outro local e pede para o vendedor atualizar a venda, e caso ele não queira, aborta a operação.
+
+*Módulo Venda
+[Melhoria] Inserida a verificação para permitir a venda de produtos que tem o PODE_SER_VENDIDO = 'N' e produtos INATIVOS.
+[Correção] Acessar cadastro de Equipamento (Erro acesso modal).
+[Correção] Arrendodamento do valor total do Item Pelo Venda_Produto.
+[Correção] Consulta de Equipamento com filtro por Cliente
+[Correção] Gravar os grids da venda quando sair da tela.
+
+*Módulo Venda - Nota Fiscal
+[Correção] Aparecia um erro "dataset not in edit mode" se o operador clicasse em SIM no exit do campo de NF Referência.
+[Melhoria] Inserida uma verificação, caso o campo NF Referência esteja vazio, ele não adiciona nos dados adicionais em branco.
+
+*Módulo Venda - Financeiro1
+[Melhoria] Adicionado no Confirmar da venda a verificação das parcelas para habilitar ou desabilitar edição. Antes só atualizava com o cancelamento do faturamento ou apertando F5.
+[Melhoria]Adicionado Botão Fat Produção onde tras itens marcados com o tipo de uso "FATURAR"
+
+*Módulo Venda - Detalhes do Produto
+[Correção] Corrigida a formatação dos campos de porcentagem de alíquota.
+[Correção] Corrigido o bug que sumia com a UN quando calcula os impostos 
+[Correção] Corrigido o bug que quando duplicava o EM_PRODUCAO ficava = 'S'
+[Correção] Corrigido o bug que não aparecia as situações relativas a venda, quando estava duplicando a mesma 
+[Correção] Corrigido o bug que não calculava corretamente o valor unitário dos produtos porque não rodava o supercalc se o valor fosse alterado dentro do venda_produto.
+
+*Módulo Produtos - Consulta
+[Melhoria] Inserido o campo Marca na consulta e agrupamento para clica e arrasta.
+[Melhoria] Adicionado Equipe padrão para o encaminhamento inicial 
+
+*Sistema de Cálculos de Produtos:
+[Melhoria] Realizado o tratamento de arrendondamento dos Totais apenas dos produtos Pai diretamente no Spreadsheet.
+
+*Módulo Empresa
+[Melhoria] Inserido botão para Atualizar Schemas e Erros.
+[Melhoria] Ajustado botão de Carregar Certificado para não realizar a consulta sem ter um certificado carregado.
+
+*Layout do Sistema
+[Melhoria] Ajustadas todas as principais telas para funcionar em telas 4:3.
+
+*Módulo Produção 
+[Melhoria]Feito ajustes visuais na forma de como é gerenciado o estoque dos mateirais na produção 
+[Melhoria]Foi Melhorado a forma de seleção da equipe ao encaminhar
+[Melhoria]Adicionado opção de definir quais estagios estarão disponiveis para aquela equipe durante o encaminhamento 
+[Melhoria]Adicionado opção de definir quais Usuarios estarão disponiveis para aquela equipe durante o encaminhamento
+[Melhoria]Adicionado a permissão de alterar a equipe padrão caso a mesma esteja ativa
+
+
+*Módulo Manifesto Destinatario
+[Correção]Foi corrigido o bug que o numero no NSU não estava funcionando individualmente para cada empresa
+
+ 
+
+
+Versão 2022.0.1.19 Lançada (28 de dezembro de 2021)
+*Modulo Financeiro1
+[Correção] Retorno do boletos, campo DT_Alteracao faltando
+[Correção] Correção no recebimento Financeiro1
+*Módulo Cmunicação
+[Correção] Anexo depois de anexar fecha a taabela
+
+Versão 2022.0.1.17 Lançada (14 de novembro de 2021)
+*Modulo Financeiro1
+[Correção] Retorno do boletos, campo DT_Alteracao faltando
+[Correção] Correção no recebimento Financeiro1
+*Módulo Cmunicação
+[Correção] Anexo depois de anexar fecha a taabela
+
+Versão 2022.0.1.16 Lançada (10 de novembro de 2021)
+*Modulo Geral
+[Novo] Adicionado sistema de segurança  de transações em forms antigas
+[Correção] feito ajustes na função de segurança das transações 
+[Correção] Ajustado o erro que acontecia apos existir uma validação
+[Novo] Adicionado Icone em forma de cadeado informando o desbloqueio de uma regra de validação.
+*Modulo Contatos
+[Correção] Foi Ajustado um bug onde a aba Salario não aparecia no cadastro de contatos.
+[Correção] Foi Ajustado um bug onde a aba Atividade não aparecia no cadastro de contatos.
+[Correção] Foi Ajustado um bug onde a foto não funcionava corretamente.
+[Correção] Foi Ajustado um bug onde a aba de cheques aparecia mesmo sem o modulo TEC integrado.
+[Melhoria] Foi adicionado o padrão roxo negrito no texto para o filtro de contatos na consulta de contatos
+*Modulo Configurações
+[Correção] Foi Ajustado um bug onde a aba de configurações manisfeto aparecia mesmo em outras telas
+*Modulo Produto
+[Correção] Foi Ajustado um bug onde algumas regras estavam aplicandos em campos diferentes do previsto.
+[Melhoria] Foi aplicado a regra para obrigatoriedade no Tipo de Produto
+[Removido] Foi Removido a regra que gravava o ultimo tipo de produto no registro do computador, conflitando com a regra da validação.
+*Modulo Manifestação
+[Correção] Foi realizado algumas melhorias na importação do manifesto, para ficar mais funcional e explicativo.
+* Módulo Fiscal 
+- [Adcionado] Feito para poder imprimir NFe para pessoa física com Inscricao, [contribuinte]
+
+Versão 2022.0.1.15 Lançada (03 de novembro de 2021)
+* Módulo Geral 
+[Novo] Adicionado Sistema de Segurança de Transações para impedir que 2 ou mais usuarios utilizem e modifiquem o mesmo registro;
+[Correção] Erro ao tentar editar regras das validações - Callstack
+* Módulo Produção 
+[Correção] "VER PRODUÇÃO" não está filtrando quando abre a tela de produção
+[Correção] Histórico Menssagens - Antes de Confirmar o Item na produção não pode Coocar Menssagens.
+*Móduo Venda
+[Correção] Equipamento - Aba de equipamentos só abre mas não fecha
+[Correção] Depois que abre o Menu -> Financeiro1, buga as abas
+* Módulo Contato 
+[Correção] Cadastro de pessoas pela venda precisa redimensionar
+* Módulo Empresa 
+[Correção] A tela de relatórios não abre para importar FR3
+
+* Módulo Fiscal 
+[Correção] Tela de Nota Fiscal do Módulo Fiscal não abre aba, abre tela
+
+
+Versão 2022.0.1.14 Lançada (02 de novembro de 2021)
+* Módulo Geral 
+[Melhoria] Redimensionamento do Subgrid, na consulta e cadastro para ficar do tamanho adequado a tela
+[Correção] Foi ajustado a abertura da tela de caixa por todo o sistema;
+
+* Módulo Produção 
+[Correção] Botão de CANCELAR está ARQUIVANDO
+[Correção] Botão de Menu não mostra nada
+[Correção] Layout da tela "Encaminhar" está com barra de rolagem
+[Correção] Tela trava do nada quando Clica em INICIAR
+
+* Módulo Produto 
+[Melhoria] Consulta - Clica e Arrasta do Fornecedor Padrão não funciona
+
+* Módulo Financeiro1 
+[Melhoria] DRE - Ocultar DRE Classificação se a DRE não estiver ativa
+
+*Módulo Consulta
+[Melhoria] Foi Melhorado o metodo de Faturar e Emitir nota Fiscal Agrupado;
+
+*Móduo Venda
+[Melhoria] Foi Melhorado o metodo de duplicar Venda; 
+
+
+
+Versão 2022.0.1.13 Lançada (29 de novembro de 2021)
+* Módulo Fiscal 
+[Correção] CNAE - Erro ao entrar na tela
+* Módulo Comunicação 
+[Melhoria] Demora muito pra marcar VISUALIZADO, melhorado o tempo em 90% mais rápido
+* Módulo Contato 
+[Melhoria] Campo Razão Social e Nome Fantasia estão em lugares trocados
+[Correção] Erro ao tentar editar regras das validações - Callstack
+[Melhoria] Grupo de Pessoas não tem uso pois não tem como consultar nem agrupar
+* Módulo Venda 
+[Melhoria] Botão de Reativar Vendas Inativadas sumiu
+[Melhoria] Consulta de país no endereço de entrega pela venda aparece uma mensagem
+[Melhoria] Financeiro1 : Em Venda > Menu > Ver Financeiro1 ( Can not Make Visible Window Modal) 
+[Melhoria] Producao : Ajustar o botao "Ver Producao" da venda, que não está levando diretamente para o item
+[Melhoria] É possível apagar a data de emissão e deixar sem data
+* Módulo Geral 
+[Melhoria] Melhorado a visualização das datas nas telas de consulta
+[Melhoria] Consulta - Não aparece feedback de data de consulta
+[Melhoria] Consulta - Botão Painel não está mostrando nada e desconfigura a tela
+* Módulo Produto 
+[Melhoria] Consulta - Produto - Erro ao tentar desativar produto
+* Módulo Manifestação do Destinatario
+[Melhoria] Adicionado configuração para escolher o NSU para Manifestação
+[Melhoria] Adicionado aviso que o usuario está em homologação quando consulta novas notas
+[Melhoria] Adicionado novos icones no menu lateral e no grid
+[Melhoria] Modificado a nomeclatura dos botões principais, para melhor entendimento do usuario 
+* Módulo Pessoas 
+[Melhoria] - Grupo de Pessoas não tem uso pois não tem como consultar nem agrupar
+[Correção] Consulta - Só consulta arquivados depois de apertar F5
+
+Versão 2022.0.1.12 Lançada (25 de novembro de 2021)
+* Módulo Geral 
+[Melhoria] Feedback do que esta sendo filtrado nas consultas - Fica roxinho em negrito
+
+* Módulo Produção 
+[Melhoria] Adição de filtro de prioridades das tarefas
+[Melhoria] Kanban nas tarefas
+* Módulo Venda 
+[Melhoria] Kanban nas tarefas
+* Módulo Produtos 
+[Melhoria] Consulta - Botão de Configurações não funciona
+[Melhoria] Consulta - Botão Painel não está mostrando nada e desconfigura a tela
+* Módulo Pessoas 
+[Melhoria] - Grupo de Pessoas não tem uso pois não tem como consultar nem agrupar
+[Correção] Consulta - Só consulta arquivados depois de apertar F5
+
+Versão 2022.0.1.11 Lançada (25 de novembro de 2021)
+* Módulo Venda 
+[Correção] Botão Cancelar Produção/Ver Produção não existe mais
+[Correção] Consulta de país no endereço de entrega pela venda aparece uma mensagem
+[Correção] Quando confirma a venda e tem um produto setado para adicionar, diz que não tem código do tipo de impressão
+[Correção] Botão de Reativar Vendas Inativadas sumiu
+[Correção] É possível apagar a data de emissão e deixar sem data
+[Correção] Correção TOTAL_RELATORIO
+[Correção] Não puxa inscrição municipal do cadastro do cliente na venda
+[Correção] TEM_WIZARD not found
+[Correção] Faturar desabilita ao trocar de tipo de venda
+[Correção] Ordem das vendas antigas fica fora depois que atualiza, UPDATE 895; retirado o 1+
+
+* Módulo Fiscal 
+[Correção] CNAE - Erro ao entrar na tela
+
+* Módulo Produto 
+[Correção] Grupo de Produto - Gerar o número - para poder cadastrar
+
+
+Versão 2022.0.1.10 Lançada (22 de novembro de 2021)
+* Módulo Venda 
+[Melhoria] NFSe Belem/PA - Impressão do sistema novo
+[Correção] Venda - Redimensionar Tab NFS-e
+*Modulo Principal
+[Melhoria] Aumentou a bolinha da notificação, para aperecer 99 itens
+[Melhoria] Alterado a Nomenclatura do módulo "Nota Fiscal" para "Fiscal"
+* Módulo Manifesto do Destinatario
+[Melhoria] Melhor Design em geral na tela de Manifesto do Destinatario
+[Melhoria] Ajuste dos filtros no menu lateral para melhor compreenção
+[Melhoria] Ajustado algumas frases e avisos para um melhor encaminhamento para obter a nota fiscal
+*Relatórios
+[Correção] Abertura do Relatório Produtos Gerencias
+
+* Módulo Contatos
+[Melhoria] Colocado a Razão Social para cima
+[Melhoria] Alterado o nome da aba "Beneficiários" para "Dependentes"
+[Melhoria] Alterado o nome da aba "Anotação Trab" para "Feramentas Trabalho"
+
+* Módulo Compra
+[Correção] Correção na importação de XML que deixava a form deformada
+
+
+Versão 2022.0.1.9 Lançada (17 de novembro de 2021)
+
+*Modulo Principal
+[Melhoria] Adição de novos icones para Compra e Produtos
+[Correção] Ajustado Bug no botão de consultar: Clientes, Fornecedores, Funcionarios, Representates
+[Correção] Aba de NFSe maior que o permitido gerando barra lateral
+
+* Módulo Financeiro1 
+[Correção] DRE - Abrir Lançamentos Financeiro1
+
+* Módulo RH 
+[Correção] DRE - Abrir Lançamentos Financeiro1
+
+* Módulo Empresa 
+[Correção] - Aba de NFSe maior que o permitido gerando barra lateral
+
+* Módulo Compra 
+[Melhoria] Manifestação do destinatário - melhorias
+
+* Módulo Venda
+[Correção] Correção na fórmula do valor do relatório
+[Correção] Venda foi alterada em outro local (EXCLUIR PARCELAS)
+[Correção] Venda -> Menu -> Ver Financeiro1 ( Can not Make Visible Window Modal) 
+[Correção] Venda - Troca de Venda quando clica em excluir parcelas
+[Correção] Venda - Pessoas : Em Venda -> Menu -> Clientes ao fechar direto pelo X apos uma modificação a tela bug e não fecha mais
+[Novo] Adicionado Atalho para abertura do TEF no F6 durante a venda
+[Novo] Adicionado Atalho para abertura do TEF Administrativo no F7 Durante a Venda
+[Melhoria] Ajuste na condição se emite ou não NFCe apos o termino do TEF  
+
+Versão 2022.0.1.8 Lançada (11 de novembro de 2021)
+
+* Módulo Venda 
+[Novo] Removido a opção do menu de Reativar venda Cancelada, agora faz de forma automática
+[Novo] Ajustado Ver Produção
+[Correção] Abertura do Financieiro
+[Correção] Abertura do caixa
+[Correção] Correção visual quando abre a aba de Nota fiscal, Modifical a Tela de Nota Fiscal para não ser MidChild
+[Correção] Reativar uma venda Cancelada Inativa
+[Correção] Ocultando o cadastro de empresa, quando esta fazendo a migração da NFSe ou NFe, aparecendo quando esta fazendo a migração das configuraçoes antigas
+[Correção] Foi alterado o campo CODIGOEAN_CADASTRO para CODIGOEAN na hora de imprimir codigo de barras utilizando o EAN pela venda(modificação realizada na tela de barras) 
+[Correção] Consulta - Adicionado o Campo Projeto na Consulta de venda(solicitação SAMYA)
+ 
+* Módulo Principal 
+[Melhoria] Alterado o nome do tela Importar XML - Manifesto Fiscal para "Manifesto do destinatário"
+[Melhoria] Importar XML - Arquivo abre direto o arquivo agora, não abre mais consulta depois o cadastro
+[Melhoria] Foi feito a troca na parte de produtos de Categoria de Produto para Categorias(igual ao site)
+[Melhoria] Consulta - Adicionado botões de consulta de Cli, For, Rep, Fun
+ 
+* Módulo Compra 
+[Melhoria] Consulta - Separa as notas por Empresa selecionada
+ 
+* Módulo Empresa 
+[Melhoria] Configurações - Ajustado a tela Filtros de Consulta
+ 
+* Módulo Financeiro1 
+[Correção] Ajustado a tela Condição de pagto
+ 
+* Módulo Produto  
+[Correção] Mudado nome da "Categoria de Produto" para "Categoria"
+[Correção] Removido a FK de Categoria da Tabela
+
+* Módulo Fiscal  
+[Correção] Ajustado a Tela Tipo de Venda
+[Correção] Ajustado a tela CST
+ 
+* Módulo Compra  
+[Melhoria] Importar XML - Manifestação do destinatário - reformulada, mais fácil
+[Melhoria] Mafiestação do destinatário - Ajustado botão Carregar Certificado na Tela de Manifesto
+[Melhoria] Mafiestação do destinatário - Feito uma função verificar o estado do certificado atual na Tela de Manifesto 
+[Melhoria] Mafiestação do destinatário - Alteração do Label "Lançar na compra as selecionadas" para "Importar na compra as selecionadas" da Tela de Manifesto
+[Melhoria] Mafiestação do destinatário - Trocado o nome no menu TreeListe "Lançar na Compra" para "Importar na compra" da Tela de Manifesto
+
+* Módulo Geral 
+[Melhoria] Iniciado o processo de colocar a Bolinha girando enquanto o sistema espera, para acalmar o usuário,
+ 
+* Módulo Estoque 
+[Melhoria] Adicionado LOG dentro da função MovimentoEstoque e Estoque
+
+
+Versão 2022.0.1.7 Lançada (11 de novembro de 2021)
+Correção quando fecha uma tela modal sobe o menu principal.
+Tabs ocultam.
+Ocultando Barra de Status da tela de Balanço Patrimonal
+Colocado para poder sair no X da aba do Balanço patrimonial
+Colocado o menu roxinho na Agenda e retirado o Bug de abertura
+Produção - Alterado o Nome Reigistro de Tempo->> Registro de Tempo
+Agenda - Abrir agenda Selecionando o Uuário atual
+
+
+Versão 2022.0.1.6 Lançada (09 de novembro de 2021)
+Velocidade Tela de Consulta de venda 10x mais rápida
+Impressão NFSe ArtLaser Belem/PA
+Correção do filtro da venda, Faturadas / A Faturar
+Coreeção do Layout do Caixas e Bancos, 
+Correção Consulta de Banco/Caixa
+Correção do Tipo de Pagto Layou e Funcionalidades
+Correção do Plano de Contas Layout e Funcionalidades
+Correção da Condição de pagamento
+Ajuste na abertura do Caixa (Retirando os caixas imativos)
+

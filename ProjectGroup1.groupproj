@@ -1,0 +1,36 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{20B7EF0D-FC5F-40C8-BC11-F2AD629BE7C7}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="WR2.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="WR2">
+        <MSBuild Projects="WR2.dproj"/>
+    </Target>
+    <Target Name="WR2:Clean">
+        <MSBuild Projects="WR2.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="WR2:Make">
+        <MSBuild Projects="WR2.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="WR2"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="WR2:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="WR2:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
