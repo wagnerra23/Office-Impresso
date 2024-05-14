@@ -1,0 +1,1 @@
+Pré-requisitos: Requisitos mínimos de hardware e software.
