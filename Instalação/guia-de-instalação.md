@@ -1,1 +1,0 @@
-Guia de Instalação: Passo a passo para instalação do sistema.
