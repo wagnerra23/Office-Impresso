@@ -44,7 +44,7 @@
 * [API](api/README.md)
   * [API](api/api.md)
   * [Exemplos-de-requesições](api/exemplos-de-requesicoes.md)
-  * [autenticação](api/autenticacao.md)
+  * [Autenticação](api/autenticacao.md)
 * [Referência](referencia/README.md)
   * [Referências](referencia/references.md)
   * [links-uteis](referencia/links-uteis.md)
