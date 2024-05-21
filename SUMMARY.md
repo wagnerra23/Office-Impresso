@@ -8,7 +8,7 @@
 * [Instalação](instalacao/README.md)
   * [Instalação](instalacao/installation.md)
   * [guia-de-instalação](instalacao/guia-de-instalacao.md)
-  * [pre-requesitos](instalacao/pre-requesitos.md)
+  * [Pré-requesitos](instalacao/pre-requesitos.md)
 * [Uso](uso/README.md)
   * [Funcionalidades Principais](Uso/funcionalidades\_principais.md)
   * [Casos de Uso](uso/casos-de-uso/README.md)
