@@ -7,7 +7,7 @@
   * [visao\_geral](introducao/visao\_geral.md)
 * [Instalação](instalacao/README.md)
   * [Instalação](instalacao/installation.md)
-  * [guia-de-instalação](instalacao/guia-de-instalacao.md)
+  * [Guia-de-instalação](instalacao/guia-de-instalacao.md)
   * [Pré-requesitos](instalacao/pre-requesitos.md)
 * [Uso](uso/README.md)
   * [Funcionalidades Principais](Uso/funcionalidades\_principais.md)
