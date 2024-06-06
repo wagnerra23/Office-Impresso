@@ -118,6 +118,6 @@
       <TfrxMemoView Name="Memo33" AllowVectorExport="True" Left="48,13389" Top="4" Width="171,59058047" Height="13,22833913" DataSetName="IBXQuery2" DisplayFormat.FormatStr="%2.2f" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="16777215" Font.Height="-11" Font.Name="Arial" Font.Style="1" Frame.Typ="0" Fill.BackColor="7405568" HAlign="haCenter" ParentFont="False" VAlign="vaBottom" Text="[SUM(&#60;Venda_Produto.&#34;SUB_TOTAL&#34;&#62;,MasterData1)]"/>
       <TfrxMemoView Name="Memo34" AllowVectorExport="True" Left="48,13389" Top="16,28348043" Width="171,59058047" Height="28,34645913" DataSetName="IBXQuery2" DisplayFormat.FormatStr="%2.2m" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="16777215" Font.Height="-11" Font.Name="Arial" Font.Style="1" Frame.Typ="0" Fill.BackColor="7405568" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="Qtde Itens Vendidos"/>
       <TfrxMemoView Name="Memo21" AllowVectorExport="True" Left="0" Top="4" Width="46,86609047" Height="39,68504913" DataSetName="IBXQuery2" DisplayFormat.FormatStr="%2.2m" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="16777215" Font.Height="-11" Font.Name="Arial" Font.Style="1" Frame.Typ="0" Fill.BackColor="7405568" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="Totais"/>
-    </TfrxReportSummary> 
+    </TfrxReportSummary>
   </TfrxReportPage>
 </TfrxReport>
