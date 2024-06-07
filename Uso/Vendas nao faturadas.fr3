@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Tag="1" Version="6.9.6" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Modal="False" PreviewOptions.Zoom="1" PrintOptions.Printer="Default" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="45377,4380053009" ReportOptions.Description.Text="" ReportOptions.LastChange="45377,4380053009" ScriptLanguage="PascalScript" ScriptText.Text="procedure BitBtn1OnClick(Sender: TfrxComponent);&#13;&#10;begin&#13;&#10;  ibxquery1.close;&#13;&#10;  ibxquery1.ParamByName('D1').value  :=  WR2StartOfTheDay(DateEdit1.Date);&#13;&#10;  ibxquery1.ParamByName('D2').value :=WR2EndOfTheDay(DateEdit2.Date);&#13;&#10;  ibxquery1.Open;                      &#13;&#10;end;&#13;&#10;&#13;&#10;begin&#13;&#10;  CarregaLogoEmpresa(Logo);         &#13;&#10;end." StoreInDFM="False" OnReportPrint="frxReportOnReportPrint">
+  <Datasets>
+    <item DataSet="frxEmpresa" DataSetName="Empresa"/>
+    <item DataSet="IBXQuery1" DataSetName="IBXQuery1"/>
+  </Datasets>
+  <TfrxDataPage Name="Data" HGuides.Text="" VGuides.Text="" Height="1000" Left="0" Top="0" Width="1000">
+    <TfrxIBXQuery Name="IBXQuery1" UserName="IBXQuery1" CloseDataSource="True" FieldAliases.Text="" BCDToCurrency="False" IgnoreDupParams="False" SQL.Text="select * from venda v where v.status like 'ATIVO%' and (v.dt_emissao between :D1 and :D2) and not(v.dt_faturamento is null)  " PropData="05704C65667403FC000470546F7002540A506172616D65746572730101061F204E616D653D224431222044617461547970653D226674556E6B6E6F776E220001061F204E616D653D224432222044617461547970653D226674556E6B6E6F776E220000"/>
+  </TfrxDataPage>
+  <TfrxReportPage Name="Page1" HGuides.Text="" VGuides.Text="" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" Frame.Typ="0" MirrorMode="0">
+    <TfrxReportTitle Name="ReportTitle1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="170,07885" Left="0" Top="18,89765" Width="718,1107">
+      <TfrxPictureView Name="Logo" AllowVectorExport="True" Left="3,77953" Top="3,77953" Width="234,33086" Height="124,72449" Frame.Typ="0" HightQuality="False" Transparent="False" TransparentColor="16777215"/>
+      <TfrxMemoView Name="MemoFantasia" AllowVectorExport="True" Left="241,88992" Top="4,33859" Width="491,3389" Height="22,67718" Font.Charset="1" Font.Color="0" Font.Height="-19" Font.Name="Arial" Font.Style="1" Frame.Typ="0" ParentFont="False" Text="[Empresa.&#34;RAZAOSOCIAL&#34;]"/>
+      <TfrxMemoView Name="MemoEndereco" AllowVectorExport="True" Left="241,88992" Top="30,7953" Width="491,3389" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="[&#60;Empresa.&#34;ENDERECO&#34;&#62;],[Empresa.&#34;NUMERO&#34;] - [&#60;Empresa.&#34;BAIRRO&#34;&#62;] - [&#60;Empresa.&#34;CIDADE&#34;&#62;]/[&#60;Empresa.&#34;UF&#34;&#62;] - [&#60;Empresa.&#34;CEP&#34;&#62;]">
+        <Formats>
+          <item/>
+          <item/>
+          <item/>
+          <item/>
+          <item/>
+        </Formats>
+      </TfrxMemoView>
+      <TfrxMemoView Name="Memo10" Align="baCenter" AllowVectorExport="True" Left="217,322975" Top="127,50402" Width="283,46475" Height="28,34645669" StretchMode="smActualHeight" AutoWidth="True" Font.Charset="1" Font.Color="10289152" Font.Height="-21" Font.Name="Arial Black" Font.Style="3" Frame.Typ="8" Frame.BottomLine.Color="8388608" Frame.BottomLine.Width="2" HAlign="haCenter" ParentFont="False" Text="Vendas não Faturadas"/>
+      <TfrxMemoView Name="Memo28" AllowVectorExport="True" Left="241,88992" Top="42,91342" Width="491,3389" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="CNPJ:[&#60;Empresa.&#34;CNPJCPF&#34;&#62;] INSC:[&#60;Empresa.&#34;INSCIDENT&#34;&#62;]"/>
+      <TfrxMemoView Name="Memo29" AllowVectorExport="True" Left="241,88992" Top="54,25201" Width="491,3389" Height="15,11812" Font.Charset="1" Font.Color="0" Font.Height="-12" Font.Name="Arial" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="Fone:[&#60;Empresa.&#34;FONE1&#34;&#62;]/Fax:[&#60;Empresa.&#34;FAX&#34;&#62;]"/>
+    </TfrxReportTitle>
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="22,67718" Left="0" Top="294,80334" Width="718,1107" ColumnWidth="0" ColumnGap="0" DataSet="IBXQuery1" DataSetName="IBXQuery1" RowCount="0">
+      <TfrxMemoView Name="IBXQuery1CODIGO" IndexTag="1" AllowVectorExport="True" Left="3,77953" Top="0" Width="79,37013" Height="18,89765" DataField="CODIGO" DataSetName="IBXQuery1" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="[IBXQuery1.&#34;CODIGO&#34;]"/>
+      <TfrxMemoView Name="IBXQuery1DT_EMISSAO" IndexTag="1" AllowVectorExport="True" Left="82,92919" Top="0" Width="83,14966" Height="18,89765" DataField="DT_EMISSAO" DataSetName="IBXQuery1" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="[IBXQuery1.&#34;DT_EMISSAO&#34;]"/>
+      <TfrxMemoView Name="IBXQuery1RAZAOSOCIAL" IndexTag="1" AllowVectorExport="True" Left="166,07885" Top="0" Width="234,33086" Height="18,89765" DataField="RAZAOSOCIAL" DataSetName="IBXQuery1" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="[IBXQuery1.&#34;RAZAOSOCIAL&#34;]"/>
+      <TfrxMemoView Name="IBXQuery1VENDA_TIPO" IndexTag="1" AllowVectorExport="True" Left="400,40971" Top="0" Width="173,85838" Height="18,89765" DataField="VENDA_TIPO" DataSetName="IBXQuery1" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="[IBXQuery1.&#34;VENDA_TIPO&#34;]"/>
+      <TfrxMemoView Name="IBXQuery1TOTAL" IndexTag="1" AllowVectorExport="True" Left="574,26809" Top="0" Width="143,62214" Height="18,89765" DataField="TOTAL" DataSetName="IBXQuery1" DisplayFormat.FormatStr="%2.2m" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="0" ParentFont="False" Text="[IBXQuery1.&#34;TOTAL&#34;]"/>
+    </TfrxMasterData>
+    <TfrxHeader Name="Header1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="22,67718" Left="0" Top="249,44898" Width="718,1107">
+      <TfrxMemoView Name="Memo1" IndexTag="1" AllowVectorExport="True" Left="3,77953" Top="3,77953" Width="79,37013" Height="18,89765" DataSetName="IBXQuery1" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" HAlign="haCenter" ParentFont="False" Text="Código"/>
+      <TfrxMemoView Name="Memo2" IndexTag="1" AllowVectorExport="True" Left="82,92919" Top="3,77953" Width="83,14966" Height="18,89765" DataSetName="IBXQuery1" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" HAlign="haCenter" ParentFont="False" Text="Dt. Emissão"/>
+      <TfrxMemoView Name="Memo3" IndexTag="1" AllowVectorExport="True" Left="166,07885" Top="3,77953" Width="234,33086" Height="18,89765" DataSetName="IBXQuery1" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" HAlign="haCenter" ParentFont="False" Text="Cliente"/>
+      <TfrxMemoView Name="Memo4" IndexTag="1" AllowVectorExport="True" Left="400,40971" Top="3,77953" Width="173,85838" Height="18,89765" DataSetName="IBXQuery1" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" HAlign="haCenter" ParentFont="False" Text="Tipo"/>
+      <TfrxMemoView Name="Memo5" IndexTag="1" AllowVectorExport="True" Left="574,26809" Top="3,77953" Width="143,62214" Height="18,89765" DataSetName="IBXQuery1" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" HAlign="haCenter" ParentFont="False" Text="Total"/>
+    </TfrxHeader>
+    <TfrxPageFooter Name="PageFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="22,67718" Left="0" Top="480,00031" Width="718,1107"/>
+    <TfrxFooter Name="Footer1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Frame.Typ="0" Height="79,37013" Left="0" Top="340,1577" Width="718,1107">
+      <TfrxMemoView Name="Memo6" IndexTag="1" AllowVectorExport="True" Left="574,48856" Top="52,91342" Width="143,62214" Height="18,89765" DataSetName="IBXQuery1" DisplayFormat.FormatStr="%2.2m" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="0" ParentFont="False" Text="TOTAL: [SUM(&#60;IBXQuery1.&#34;TOTAL&#34;&#62;,MasterData1)]"/>
+    </TfrxFooter>
+  </TfrxReportPage>
+  <TfrxDialogPage Name="DialogPage1" Font.Charset="1" Font.Color="-16777208" Font.Height="-13" Font.Name="Arial" Font.Style="0" HGuides.Text="" VGuides.Text="" DoubleBuffered="False" Height="200" ClientHeight="169" Left="527" Top="192" Width="300" Scaled="True" ClientWidth="298">
+    <TfrxDateEditControl Name="DateEdit1" Left="24" Top="36" Width="101" Height="21" ShowHint="True" Color="-16777211" Date="45377" Time="0,444551956017676" WeekNumbers="False"/>
+    <TfrxDateEditControl Name="DateEdit2" Left="160" Top="36" Width="101" Height="21" ShowHint="True" Color="-16777211" Date="45377" Time="0,444551956017676" WeekNumbers="False"/>
+    <TfrxBitBtnControl Name="Ok" Left="108" Top="88" Width="75" Height="25" ShowHint="True" Caption="Ok" ModalResult="1" OnClick="BitBtn1OnClick"/>
+  </TfrxDialogPage>
+</TfrxReport>
